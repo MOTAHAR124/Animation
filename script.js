@@ -1,7 +1,7 @@
-var crsr = document.querySelector("#cursor");
+var crsr = document.getElementById("cursor");
 var blur = document.querySelector("#cursor-blur");
 
-document.addEventListener("mousemove", function (dets) {
+document.addEventListener("mousemove", function (dets) { // dets used to print mouse position in x , y axis
   crsr.style.left = dets.x + "px";
   crsr.style.top = dets.y + "px";
   blur.style.left = dets.x - 250 + "px";
@@ -26,25 +26,25 @@ gsap.to("#nav", {
   backgroundColor: "#000",
   duration: 0.5,
   height: "110px",
-  scrollTrigger: {
-    trigger: "#nav",
-    scroller: "body",
+  scrollTrigger: { 
+    trigger: "#nav",  // Trigger nav element ko kar rahe ho
+    scroller: "body", // Scroll body me kar raha hu
     // markers:true,
-    start: "top -10%",
-    end: "top -11%",
-    scrub: 1,
+    start: "top -10%", // top ka 10% screen scroll karte he animation start hota
+    end: "top -11%", // top ka 11% screen scroll karte he animation end hota
+    scrub: 1, // smooth 
   },
 });
 
 gsap.to("#main", {
   backgroundColor: "#000",
   scrollTrigger: {
-    trigger: "#main",
-    scroller: "body",
+    trigger: "#main", // Trigger main element ko kar rahe ho
+    scroller: "body", // Scroll body me kar raha hu
     // markers: true,
-    start: "top -25%",
-    end: "top -70%",
-    scrub: 2,
+    start: "top -25%",  // top ka 25% screen scroll karte he animation start hota
+    end: "top -70%",  // top ka 70% screen scroll karte he animation end hota
+    scrub: 2, // 2 second lagega backgroundColor ko black hone me
   },
 });
 
