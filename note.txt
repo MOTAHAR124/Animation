@@ -1,0 +1,2 @@
+used HTML, CSS AND JAVASCRIPT to build this project
+used GSAP for animation
