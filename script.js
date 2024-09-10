@@ -14,7 +14,7 @@ document.addEventListener("mousemove", function (dets) { // 'dets' captures the 
 var h4all = document.querySelectorAll("#nav h4");
 h4all.forEach(function (elem) {
   elem.addEventListener("mouseenter", function () { // When the mouse enters the <h4> element
-    crsr.style.scale = 3; // Increase the size of the circle (cursor) to 3 times its original size.....
+    crsr.style.scale = 3; // Increase the size of the circle (cursor) to 3 times its original size
     crsr.style.border = "1px solid #fff"; // Change the circle's border to a 1px solid white
     crsr.style.backgroundColor = "transparent"; // Make the circle's background transparent
   });
@@ -52,7 +52,7 @@ gsap.to("#main", {
   },
 });
 
-gsap.from("#about-us img , #about-us-in", {
+gsap.from("#about-us img,#about-us-in", {
   y: 90, // The elements will start 90 pixels below their final position.
   opacity: 0, // The elements will start fully transparent.
   duration: 1, // The animation duration is 1 second.
