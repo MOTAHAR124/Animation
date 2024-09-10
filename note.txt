@@ -1,0 +1,4 @@
+Built this project using HTML, CSS, and JavaScript.
+Used GSAP for animations.
+Deployed website: https://motahar124.github.io/Animation/
+Source code: https://github.com/MOTAHAR124/Animation.git
